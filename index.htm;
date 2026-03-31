@@ -12,8 +12,8 @@
     }
 
     body {
-        font-family: "Georgia", "Times New Roman", serif;
-        background: #f0f4ff;
+        font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+        background: #f8f9fa;
         padding: 0;
         margin: 0;
     }
@@ -25,35 +25,25 @@
         background: #ffffff;
         border-radius: 14px;
         padding: 16px;
-        box-shadow: 0 4px 16px rgba(8, 57, 128, 0.10);
+        box-shadow: 0 4px 12px rgba(0,0,0,0.05);
     }
 
     /* Westgate Resorts Branding Colors */
     :root {
-        --wg-forest:     #083980;   /* deep blue          */
-        --wg-gold:       #000000;   /* black             */
-        --wg-light-tan:  #FFF8E0;   /* soft yellow tint   */
-        --wg-mid-tan:    #FFE854;   /* bright yellow      */
+        --wg-green: #1B3632;
+        --wg-gold: #C5A059;
+        --wg-light: #F9F7F2;
     }
 
     .header-logo {
         text-align: center;
-        font-weight: 800;
+        font-family: "Georgia", "Times New Roman", serif;
+        font-size: 24px;
+        font-weight: 700;
         text-transform: uppercase;
-        letter-spacing: 2px;
-        color: var(--wg-forest);
-        font-size: 18px;
-        margin-bottom: 2px;
-    }
-
-    .header-tagline {
-        text-align: center;
-        font-size: 11px;
         letter-spacing: 1.5px;
-        color: var(--wg-gold);
-        text-transform: uppercase;
-        margin-bottom: 10px;
-        font-style: italic;
+        color: var(--wg-green);
+        margin-bottom: 4px;
     }
 
     .date-range {
@@ -62,7 +52,6 @@
         margin-bottom: 12px;
         color: #555;
         font-size: 16px;
-        font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     }
 
     .nav-arrows {
@@ -71,7 +60,7 @@
         margin-bottom: 10px;
         font-size: 20px;
         padding: 0 4px;
-        color: var(--wg-forest);
+        color: var(--wg-green);
         font-weight: bold;
     }
 
@@ -82,7 +71,6 @@
         margin-bottom: 12px;
         font-size: 13px;
         color: #777;
-        font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     }
 
     .week-days div {
@@ -94,7 +82,7 @@
     }
 
     .week-days .active {
-        background: var(--wg-forest);
+        background: var(--wg-green);
         color: white;
         font-weight: 600;
     }
@@ -105,28 +93,25 @@
         font-size: 14px;
         font-weight: 600;
         color: var(--wg-gold);
-        font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-        letter-spacing: 0.3px;
     }
 
     .day-label {
         margin-top: 20px;
         margin-bottom: 8px;
         font-weight: 700;
-        color: var(--wg-forest);
+        color: var(--wg-green);
         font-size: 15px;
         padding-left: 4px;
-        border-bottom: 1px solid var(--wg-mid-tan);
+        border-bottom: 1px solid #e0e0e0;
         padding-bottom: 4px;
-        font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     }
 
     .shift-card {
         width: 100%;
-        background: #f4f8ff;
+        background: white;
         padding: 14px;
         border-radius: 12px;
-        box-shadow: 0 2px 8px rgba(8, 57, 128, 0.07);
+        box-shadow: 0 2px 6px rgba(0,0,0,0.06);
         border-left: 5px solid var(--wg-gold);
         margin-bottom: 16px;
     }
@@ -136,29 +121,25 @@
         font-weight: 700;
         color: #333;
         margin-bottom: 6px;
-        font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     }
 
     .shift-details {
         font-size: 14px;
         color: #555;
         margin-bottom: 3px;
-        font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     }
 
     .shift-location {
         font-weight: 600;
-        color: var(--wg-forest);
+        color: var(--wg-green);
     }
 
     .shift-meta {
         text-align: right;
         font-size: 12px;
-        color: #999;
+        color: #888;
         margin-top: 6px;
         text-transform: uppercase;
-        letter-spacing: 0.5px;
-        font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     }
 
     .swap-btn {
@@ -167,18 +148,16 @@
         font-size: 14px;
         font-weight: 600;
         border-radius: 8px;
-        background: var(--wg-forest);
+        background: var(--wg-green);
         color: white;
         border: none;
         cursor: pointer;
         width: 100%;
         transition: background 0.2s;
-        font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-        letter-spacing: 0.4px;
     }
 
     .swap-btn:hover {
-        background: #052d6b;
+        background: #112320;
     }
 
     /* Modal Styling */
@@ -186,7 +165,7 @@
         display: none;
         position: fixed;
         inset: 0;
-        background: rgba(8, 57, 128, 0.72);
+        background: rgba(27, 54, 50, 0.7); /* Deep green overlay */
         justify-content: center;
         align-items: center;
         padding: 20px;
@@ -200,7 +179,6 @@
         max-width: 360px;
         border-radius: 12px;
         border-top: 8px solid var(--wg-gold);
-        font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     }
 
     .close {
@@ -217,8 +195,7 @@
 <div class="widget">
 
     <div class="header-logo">Westgate Resorts</div>
-    <div class="header-tagline">Where Hospitality Lives</div>
-    <h3 style="margin-top: 0; margin-bottom: 15px; text-align:center; color: #555; font-weight: 400; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 15px;">Schedule Manager</h3>
+    <h3 style="margin-top: 0; margin-bottom: 15px; text-align:center; color: #444; font-weight: 400; font-family: 'Georgia', serif; font-style: italic;">Schedule Manager</h3>
 
     <div class="date-range">Jan 12 – Jan 18, 2026</div>
 
@@ -237,33 +214,33 @@
         <div>Su<br>18</div>
     </div>
 
-    <div class="summary">Total Hours: 42.5 &nbsp;|&nbsp; Assigned Resort: Westgate Lakes</div>
+    <div class="summary">Total Hours: 42.5 | Assigned Resort: Westgate Lakes Resort & Spa</div>
 
     <div class="day-label">Mon, Jan 12</div>
     <div class="shift-card">
         <div class="shift-time">8:00am – 5:00pm</div>
-        <div class="shift-details"><strong>Role:</strong> Resort General Manager</div>
-        <div class="shift-details shift-location">Westgate Lakes Resort & Spa</div>
-        <div class="shift-meta">Operations Walkthrough & Revenue Review</div>
-        <button class="swap-btn" onclick="openSwapModal('Mon 8am-5pm: Westgate Lakes')">Request Coverage</button>
+        <div class="shift-details"><strong>Role:</strong> Front Desk Supervisor</div>
+        <div class="shift-details shift-location">Main Lobby</div>
+        <div class="shift-meta">VIP Check-ins & Arrivals</div>
+        <button class="swap-btn" onclick="openSwapModal('Mon 8am-5pm: Main Lobby')">Request Coverage</button>
     </div>
 
     <div class="day-label">Tue, Jan 13</div>
     <div class="shift-card">
         <div class="shift-time">9:00am – 6:00pm</div>
-        <div class="shift-details"><strong>Role:</strong> Guest Experience Director</div>
-        <div class="shift-details shift-location">Westgate Smoky Mountain Resort</div>
-        <div class="shift-meta">Seasonal Occupancy Review</div>
-        <button class="swap-btn" onclick="openSwapModal('Tue 9am-6pm: Smoky Mountain')">Request Coverage</button>
+        <div class="shift-details"><strong>Role:</strong> Activities Coordinator</div>
+        <div class="shift-details shift-location">Poolside Deck & Recreation Center</div>
+        <div class="shift-meta">Daily Resort Events</div>
+        <button class="swap-btn" onclick="openSwapModal('Tue 9am-6pm: Poolside Deck')">Request Coverage</button>
     </div>
 
     <div class="day-label">Wed, Jan 14</div>
     <div class="shift-card">
         <div class="shift-time">10:00am – 7:00pm</div>
-        <div class="shift-details"><strong>Role:</strong> Hospitality Operations Lead</div>
-        <div class="shift-details shift-location">Regional Portfolio (Remote/On-Site)</div>
-        <div class="shift-meta">Housekeeping & Facilities Sync</div>
-        <button class="swap-btn" onclick="openSwapModal('Wed 10am-7pm: Regional Portfolio')">Request Coverage</button>
+        <div class="shift-details"><strong>Role:</strong> Night Manager</div>
+        <div class="shift-details shift-location">Resort Operations</div>
+        <div class="shift-meta">Overnight Guest Services</div>
+        <button class="swap-btn" onclick="openSwapModal('Wed 10am-7pm: Resort Ops')">Request Coverage</button>
     </div>
 
 </div>
@@ -271,14 +248,14 @@
 <div id="swapModal" class="modal">
     <div class="modal-content">
         <span class="close" onclick="closeSwapModal()">&times;</span>
-        <h3 style="color: var(--wg-forest); font-family: Georgia, serif;">Request Coverage</h3>
+        <h3 style="color: var(--wg-green); font-family: 'Georgia', serif;">Request Coverage</h3>
         <p id="selectedShift" style="font-size: 14px; color: #666;"></p>
 
         <label><strong>Select Colleague:</strong></label><br><br>
         <select id="colleague" style="width:100%;padding:10px;border-radius:6px;font-size:15px; border: 1px solid #ccc;">
-            <option value="Sarah Jenkins">Sarah Jenkins (Guest Svcs. Mgr.)</option>
-            <option value="Marcus Thompson">Marcus Thompson (Sr. Resort Mgr.)</option>
-            <option value="Elena Rodriguez">Elena Rodriguez (Front of House Lead)</option>
+            <option value="Sarah Jenkins">Sarah Jenkins (Guest Services)</option>
+            <option value="Marcus Thompson">Marcus Thompson (Housekeeping Mgr)</option>
+            <option value="Elena Rodriguez">Elena Rodriguez (Concierge)</option>
         </select>
 
         <br><br>
@@ -306,7 +283,7 @@ async function sendSwapRequest() {
         "accessorIds": ["680c0cd13efa2971fe53c4c7"],
         "channels": ["notificationCenter", "push"],
         "content": {
-            "en_US": { "text": `Westgate Resorts Shift Request: ${chosenShift} coverage requested by Resort Manager. Assigned to: ${colleague}` }
+            "en_US": { "text": `Westgate Resorts Shift Request: ${chosenShift} coverage requested. Assigned to: ${colleague}` }
         },
         "link":"https://app.staffbase.com/content/page/6914e3ecd5cde774c74364f1"
     };
@@ -315,7 +292,7 @@ async function sendSwapRequest() {
         const res = await fetch("https://app.staffbase.com/api/branch/notifications", {
             method: "POST",
             headers: {
-                "Authorization":"Basic NjgwZmFjZDlhZmY4ZTkyZDQ3OGVkMzdjOk9bbztXbF9IMnQpQjM1SUpoe1ViVyshdVRaKWlFLU9xTF5KSSsta10hOUIobFRGLTJDc3F6ZW4yQzBFdFNZSzI=",
+                "Authorization":"Basic Njg3Njc2ZjJhYzgzNWIxM2RiZTZhZDM2OllvRVIuXk1ffn41c05rOUd2WWZdYVhGZlssRWx+Uih9XXYmb2c3SF1UeUJUWHBlO0x4JjBJRm52ejkwTW0obEU=",
                 "Content-Type":"application/json"
             },
             body: JSON.stringify(payload)
@@ -327,11 +304,6 @@ async function sendSwapRequest() {
     }
 
     closeSwapModal();
-}
-</script>
-
-</body>
-</html>
 }
 </script>
 
